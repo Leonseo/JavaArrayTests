@@ -1,0 +1,12 @@
+public class Class {
+    public static void main(String[] args){
+
+     String str = "11 34 3 45 23 5 67"; //стрка
+     String strArr[] = str.split(" "); //разделяет строку на строки через " "
+     int numArr[] = new int[strArr.length];// новый массив
+        for (int i = 0; i < strArr.length; i++) {
+            numArr[i] = Integer.parseInt(strArr[i]); //parseInt() преобразует строку в число
+             System.out.println(numArr[i]);
+        }
+    }
+}
